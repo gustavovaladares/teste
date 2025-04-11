@@ -7,20 +7,62 @@
    <style>
     body{
         align-items: center;
-  background: linear-gradient(45deg, #a7cfdf 0%,#23538a 100%);
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  font-family: 'Montserrat', sans-serif;
-  min-height: 100vh;
+        background: linear-gradient(45deg, #000000 0%,#fdfdfd 100%);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        font-family: 'Montserrat', sans-serif;
+        min-height: 100vh;
+    }
+    button {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 8px;
+        transition: background-color 0.3s;
+    }
+
+    p{
+        padding: 15px 32px;
+        font-size: 49px;
+        margin: 4px 2px;
+        
+    }
+
+    button:hover {
+        background-color: #45a049;
     }
    </style>
-    <title>EAE boy</title>
+    <title>Sexoooo</title>
 </head>
 <body>
-    <h1> boy cuzao</h1>
-    <p> boy lixinho</p>
+    <h1> bem vindo ao site para sabe se o boy é lixo ou não!</h1>
+    <p> boy lixinho?</p>
 
-    <button> boy é gay?</button>
+    
+    <button id="btn-sim">Sim</button>
+    <button id="btn-nao">Não</button>
+
+    <script>
+     
+        const btnSim = document.getElementById("btn-sim");
+        const btnNao = document.getElementById("btn-nao");
+
+        btnSim.addEventListener("click", function() {
+            alert("Sim, ele é gay!");
+        });
+
+        // Adiciona o evento de clique ao botão "Não"
+        btnNao.addEventListener("click", function() {
+            alert("ERROU, ele é gay! kkkkkkkk");
+        });
+    </script>
 </body>
 </html>
